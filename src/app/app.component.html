@@ -1,0 +1,135 @@
+<div class="m-2">
+  <div class="card " >
+    <div class="card-body">
+        <h5><span>General Setting</span></h5>
+      <hr>
+      <form>
+        <div class="row">
+            <div class="form-group col-md-6" >
+              <h6>Country</h6>
+              <select class="form-control" id="sel1">
+                <option *ngFor="let item of datas " [value]="item.id">{{item.name}}</option>
+              </select>
+            </div>
+            <div class="form-group col-md-6">
+              <h6>City</h6>
+              <select class="form-control" id="se1"  >
+                <option *ngFor="let item of datas">{{item.capital}}</option>
+              </select>
+            </div>
+            <div class="form-group col-md-6">
+              <h6>Old second parameter</h6>
+              <input type="text" class="form-control">
+            </div>
+        </div>
+         <h5><span>Element</span></h5>
+         <hr>
+         <div class="card form-row">
+
+           <div class="form-group col-md-6">
+             <h6>Type<span class="text-danger"> * </span></h6>
+             <select class="form-control" id="sel2">
+               <option>1</option>
+               <option>2</option>
+               <option>3</option>
+               <option>4</option>
+             </select>
+           </div>
+         </div>
+        &nbsp;
+        <div class="border form-row">
+          <div class="form-group col-md-4">
+            <h6>Type<span class="text-danger"> * </span></h6>
+            <select class="form-control" id="sel3">
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+            </select>
+          </div>
+            <div class="form-group col-md-4">
+              <h6>Old second parameter</h6>
+              <input type="text" class="form-control">
+            </div>
+          <div class="form-group col-md-4">
+            <h6>Old second parameter</h6>
+            <input type="text" class="form-control">
+          </div>
+          <div class="form-group col-md-3">
+            <h6>Type<span class="text-danger"> * </span></h6>
+            <select class="form-control" id="sel4">
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+            </select>
+          </div>
+          <div class="form-group col-md-3">
+            <h6>Old second parameter</h6>
+            <input type="text" class="form-control">
+          </div>
+          <div class="form-group col-md-5">
+            <h6>Old second parameter</h6>
+            <input type="text" class="form-control">
+          </div>
+          <div class="form-group col-md-1">
+            <h6>.</h6>
+            <button type="button" class="btn btn-danger">X</button>
+          </div>
+
+        </div>
+        &nbsp;
+        <div class="border form-row">
+          <div class="form-group col-md-4">
+            <h6>Type<span class="text-danger"> * </span></h6>
+            <select class="form-control" id="sel5">
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+            </select>
+          </div>
+          <div class="form-group col-md-4">
+            <h6>Old second parameter</h6>
+            <input type="text" class="form-control">
+          </div>
+          <div class="form-group col-md-4">
+            <h6>Old second parameter</h6>
+            <input type="text" class="form-control">
+          </div>
+
+          <div class="form-group col-md-3">
+            <h6>Type<span class="text-danger"> * </span></h6>
+            <select class="form-control" id="sel6">
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+            </select>
+          </div>
+          <div class="form-group col-md-3">
+            <h6>Old second parameter</h6>
+            <input type="text" class="form-control">
+          </div>
+          <div class="form-group col-md-5">
+            <h6>Old second parameter</h6>
+            <input type="text" class="form-control">
+          </div>
+
+          <div class="form-group col-md-1">
+            <h6>.</h6>
+            <button type="button" class="btn btn-danger">X</button>
+          </div>
+        </div>
+        &nbsp;
+        <div>
+        <button type="button" class="btn btn-primary">Add fields</button>
+          <button type="button" class="btn btn-success">Generate From</button>
+          <button type="button" class="btn btn-info">Save current fields to file</button>
+          <button type="button" class="btn btn-warning">Load fields form file</button>
+          <button type="button" class="btn btn-danger">clear all fields</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
